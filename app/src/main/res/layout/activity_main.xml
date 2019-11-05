@@ -1,8 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    android:padding="2dp"
     tools:context=".MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/main_FAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="18dp"
+        android:clickable="true"
+        app:srcCompat="@mipmap/add"
+        android:focusable="true" />
+
+    <GridView
+        android:id="@+id/main_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth" />
+
+    <Button
+        android:id="@+id/main_btn_more"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="18dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="MORE"
+        android:textSize="12sp" />
 
 </RelativeLayout>
